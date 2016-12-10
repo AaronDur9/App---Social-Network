@@ -1,0 +1,20 @@
+Este proyecto Maven incluye las siguientes librerías:
+
+- mysql-connector-java, para conectarse mediante JDBC.
+- Hibernate
+- Hibernate C3P0
+- Apache Commons IO   (funciones de utilizad relativas a E/S)
+- Apache Commons Lang (funciones de utilidad varias)
+- JCalendar (componente Swing para seleccionar fechas)
+
+Con esto es más que suficiente para desarrollar la práctica. No es necesario
+que utilices todas estas librerías.
+
+Si deseas utilizar una librería que no aparece aquí, añade la dependencia
+correspondiente en Maven. SOLAMENTE en el caso en que la librería no esté
+disponible en el repositorio "oficial" de Maven se permitirá que incluyas el
+fichero .jar en el proyecto. En este caso excepcional, copia la librería al
+directorio 'lib' del proyecto. 
+
+La estructura de paquetes mostrada en la carpeta src/main/java es orientativa.
+Puedes organizar las clases como quieras, creando los paquetes necesarios.

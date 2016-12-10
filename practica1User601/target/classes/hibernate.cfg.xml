@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost/practica_601</property>
+    <property name="connection.username">P1</property>
+    <property name="connection.password">PasswordP1</property>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="show_sql">true</property>
+
+    <property name="hibernate.c3p0.timeout">1</property>
+
+
+    <!-- Añadir aquí las anotaciones mapping -->
+    <!-- <mapping class=""/> -->
+	<mapping class="abd.p1.model.Pregunta"/>
+	<mapping class="abd.p1.model.Opcion"/>
+	<mapping class="abd.p1.model.User"/>
+	<mapping class="abd.p1.model.AnsweredQuestion"/>
+	<mapping class="abd.p1.model.Message"/>
+	<mapping class="abd.p1.model.FriendRequestMessage"/>
+	<mapping class="abd.p1.model.QuestionInviteMessage"/>
+	<mapping class="abd.p1.model.TextMessage"/>
+	
+  </session-factory>
+</hibernate-configuration>
